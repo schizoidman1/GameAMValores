@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMP</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+    
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <img src="../static/assets/ArcelorMittal-Logo.png" alt="Logo ArcelorMittal" class="logo">
+            <h1 class="navbar-title">fluxo do processo de bloqueio</h1>
+        </div>
+    </nav>
+
+    <!-- Enunciado -->
+    <div class="enunciado">
+        <h2>Sequencie as atividades do fluxo de bloqueio do WCM e associe cada uma ao responsável correto.</h2>
+    </div>
+
+    <div class="tutorial">
+        <p>Veja como arrastar e soltar os elementos:</p>
+        <img src="../static/assets/dragdrop-tutorial.gif" alt="Tutorial de arrastar e soltar" class="tutorial-gif">
+    </div>
+    
+
+    <!-- Jogo -->
+    <div class="container">
+        <!-- Colunas de Atividades e Responsáveis com Numeradores -->
+        <div class="activity-column">
+            <div class="enunciado" style="font-weight: bold;">Inicio</div>
+            <div class="row">
+                <span class="order-number">1</span>
+                <div class="dropzone atividade-zone" id="atividade-1" style="background-color: #F47D30; color: white; font-weight: bold;">POSICIONAR TRAVAR E DESLIGAR</div>
+                <div class="dropzone responsavel-zone" id="responsavel-1"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">2</span>
+                <div class="dropzone atividade-zone" id="atividade-2"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-2"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">3</span>
+                <div class="dropzone atividade-zone" id="atividade-3"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-3"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">4</span>
+                <div class="dropzone atividade-zone" id="atividade-4"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-4"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">5</span>
+                <div class="dropzone atividade-zone" id="atividade-5"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-5"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">6</span>
+                <div class="dropzone atividade-zone" id="atividade-6"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-6"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">7</span>
+                <div class="dropzone atividade-zone" id="atividade-7"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-7"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">8</span>
+                <div class="dropzone atividade-zone" id="atividade-8"></div>
+                <div class="dropzone responsavel-zone" id="responsavel-8"></div>
+            </div>
+            <div class="row">
+                <span class="order-number">9</span>
+                <div class="dropzone atividade-zone" id="atividade-2" style="background-color: #F47D30; color: white; font-weight: bold;">TESTAR FUNCIONAMENTO (RPT)</div>
+                <div class="dropzone responsavel-zone" id="responsavel-9"></div>
+            </div>
+            <div class="enunciado" style="font-weight: bold ;">Fim</div>
+        </div>
+
+        <!-- Lista de Atividades e Responsáveis Embaralhados -->
+        <div class="column-container">
+            <h3>Atividades</h3>
+            <div class="mixed-column">  
+                <div id="atividade2" class="draggable" draggable="true">BLOQUEAR (Lista de Bloqueio)</div>
+                <div id="atividade3" class="draggable" draggable="true">TESTAR O COMANDO (RPT)</div>
+                <div id="atividade4" class="draggable" draggable="true">CONSIGNAR (Atestado de Segurança)</div>
+                <div id="atividade5" class="draggable" draggable="true">TESTAR POTENCIAL ZERO ("OM")</div>
+                <div id="atividade6" class="draggable" draggable="true">EXECUTAR TAREFA ("OM")</div>
+                <div id="atividade7" class="draggable" draggable="true">DESCONSIGNAR (Atestado de Segurança)</div>
+                <div id="atividade8" class="draggable" draggable="true">DESBLOQUEAR (Lista de Desbloqueio)</div>
+            </div>
+        </div>
+        
+        <div class="column-container">
+            <h3>Responsáveis</h3>
+            <div class="mixed-column">
+                <div id="responsavel1" class="draggable" draggable="true" style="background-color: orange;">LÍDER DO BLOQUEIO</div>
+                <div id="responsavel1" class="draggable" draggable="true" style="background-color: orange;">LÍDER DO BLOQUEIO</div>
+                <div id="responsavel2" class="draggable" draggable="true" style="background-color: green;">OPERAÇÃO</div>
+                <div id="responsavel2" class="draggable" draggable="true" style="background-color: green;">OPERAÇÃO</div>
+                <div id="responsavel2" class="draggable" draggable="true" style="background-color: green;">OPERAÇÃO</div>
+                <div id="responsavel3" class="draggable" draggable="true" style="background-color: blue;">BLOQUEADOR</div>
+                <div id="responsavel3" class="draggable" draggable="true" style="background-color: blue;">BLOQUEADOR</div>
+                <div id="responsavel4" class="draggable" draggable="true" style="background-color: yellow; color: black;">EXECUTANTE</div>
+                <div id="responsavel4" class="draggable" draggable="true" style="background-color: yellow; color: black;">EXECUTANTE</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <p>Selecione sua área:</p>
+            <select id="userArea">
+                <option value="Administração">Administração</option>
+                <option value="Manutenção">Manutenção</option>
+                <option value="Operação">Operação</option>
+            </select>
+            <select id="userContract">
+                <option value="Interno">Interno</option>
+                <option value="Contratado">Contratado</option>
+            </select>
+            <p>Você tem certeza de que deseja verificar suas respostas? Isso só pode ser feito uma vez.</p>
+            <button id="confirmButton">Sim</button>
+            <button id="cancelButton">Não</button>
+        </div>
+    </div>
+
+    <div id="chartPopup" class="popup">
+    <div class="popup-content">
+        <h3>Gabarito:</h3>
+        <img src="../static/assets/gabarito.png" alt="Imagem do Gabarito" class="gabarito-img">
+        
+        <p id="resultado" style="font-weight: bold;">Você acertou <span id="acertos"></span>% do Fluxo de Bloqueio.</p>
+
+        <button id="closeChartButton">Fechar</button>
+    </div>
+</div>
+
+    
+
+    <button id="checkAnswersButton">Verificar Respostas</button>
+    
+
+    <script src="../static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@interactjs/interactjs/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
