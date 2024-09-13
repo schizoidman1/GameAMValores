@@ -10,7 +10,7 @@ Este projeto é um jogo de arrastar e soltar onde os usuários devem sequenciar 
 
 ### Pré-requisitos
 
-1. **Python**: Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado na versão 3.7 ou superior.
+1. **Python**: Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado na versão 3.7 ou superior. Caso não consiga instalar o python diretamente na máquina devido a restrições, você pode instalar através do aplicativo Microsoft Visual Studio Code e acessar a aba Extensões e procurar pela extensão do Python.
 2. **Bibliotecas Necessárias**:
     - `Flask`: Para rodar o servidor web.
     - `Chart.js`: Para renderizar gráficos no frontend.
@@ -90,11 +90,6 @@ Certifique-se de que o arquivo `respostas.csv` tenha permissões de leitura e es
 ├── templates
 │   └── index.html          # Página principal do jogo
 ├── app.py                  # Aplicação Flask
-└── README.txt               # Este arquivo
+├── README.txt              # Este arquivo
+└── README.md               # README em markdown
 ```
-
-## Contribuindo
-
-Se desejar contribuir com o projeto, sinta-se à vontade para abrir issues ou pull requests no repositório.
-
----
