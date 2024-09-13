@@ -1,5 +1,3 @@
-Aqui está um exemplo de um arquivo `README.md` para seu projeto de jogo:
-
 ---
 
 # Jogo de Fluxo de Bloqueio WCM
