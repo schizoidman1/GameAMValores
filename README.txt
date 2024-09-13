@@ -29,7 +29,7 @@ Este projeto é um jogo de arrastar e soltar onde os usuários devem sequenciar 
 
 2. **Instale as dependências do Python**:
    ```bash
-   pip install flask
+   pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org flask
    ```
 
 ### Executando o Jogo
