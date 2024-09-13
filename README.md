@@ -8,7 +8,11 @@ Este projeto é um jogo de arrastar e soltar onde os usuários devem sequenciar 
 
 ### Pré-requisitos
 
-1. **Python**: Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado na versão 3.7 ou superior. Caso não consiga instalar o python diretamente na máquina devido a restrições, você pode instalar através do aplicativo Microsoft Visual Studio Code e acessar a aba Extensões e procurar pela extensão do Python.
+1. **Python**: Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado na versão 3.7 ou superior. Caso não consiga instalar o python através do instalador devido a restrições, você pode executar o seguinte comando no Prompt de Comando:
+   ```bash
+   winget install python
+   ```
+
 2. **Bibliotecas Necessárias**:
     - `Flask`: Para rodar o servidor web.
     - `Chart.js`: Para renderizar gráficos no frontend.
